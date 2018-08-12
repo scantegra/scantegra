@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5A80024-2A3C-4FB9-AC06-CE5159724D5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scantegra.Core</RootNamespace>
+    <AssemblyName>Scantegra.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.4\lib\net452\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.4\lib\net452\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\OptionSets\Account_Address1_FreightTermsCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_Address1_ShippingMethodCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_Address2_AddressTypeCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_Address2_FreightTermsCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_Address2_ShippingMethodCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_BusinessTypeCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_CustomerSizeCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_CustomerTypeCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_IndustryCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_OwnershipCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_PaymentTermsCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_PreferredAppointmentDayCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_PreferredAppointmentTimeCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_PreferredContactMethodCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_ShippingMethodCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_StatusCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_TerritoryCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_CustomerSizeCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_CustomerTypeCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_EducationCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_FamilyStatusCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_GenderCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_HasChildrenCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_LeadSourceCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_PaymentTermsCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_PreferredAppointmentDayCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_PreferredAppointmentTimeCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_PreferredContactMethodCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_ShippingMethodCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_StatusCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_TerritoryCode.cs" />
+    <Compile Include="Entities\OptionSets\msdyn_customerasset_StatusCode.cs" />
+    <Compile Include="Entities\OptionSets\msdyn_TravelChargeType.cs" />
+    <Compile Include="Entities\OptionSets\scan_scantegrasettings_StatusCode.cs" />
+    <Compile Include="Entities\ScantegraServiceContext.cs" />
+    <Compile Include="Entities\Generated\Account.cs" />
+    <Compile Include="Entities\Generated\Contact.cs" />
+    <Compile Include="Entities\Generated\msdyn_customerasset.cs" />
+    <Compile Include="Entities\Generated\scan_scantegrasettings.cs" />
+    <Compile Include="Entities\OptionSets\Account_AccountCategoryCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_AccountClassificationCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_AccountRatingCode.cs" />
+    <Compile Include="Entities\OptionSets\Account_Address1_AddressTypeCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_AccountRoleCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_Address1_AddressTypeCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_Address1_FreightTermsCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_Address1_ShippingMethodCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_Address2_AddressTypeCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_Address2_FreightTermsCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_Address2_ShippingMethodCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_Address3_AddressTypeCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_Address3_FreightTermsCode.cs" />
+    <Compile Include="Entities\OptionSets\Contact_Address3_ShippingMethodCode.cs" />
+    <Compile Include="Plugins\BasePlugin.cs" />
+    <Compile Include="Plugins\ILocalPluginContext.cs" />
+    <Compile Include="Plugins\LocalPluginContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

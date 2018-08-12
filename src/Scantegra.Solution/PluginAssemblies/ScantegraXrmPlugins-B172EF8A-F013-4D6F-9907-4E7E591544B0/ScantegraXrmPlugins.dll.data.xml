@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="Scantegra.Xrm.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=08b2caed65e1b666" PluginAssemblyId="b172ef8a-f013-4d6f-9907-4e7e591544b0" CustomizationLevel="1">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/ScantegraXrmPlugins-B172EF8A-F013-4D6F-9907-4E7E591544B0/ScantegraXrmPlugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Scantegra.Xrm.Plugins.ScantegraSettings.ScantegraSettingsPreCreate, Scantegra.Xrm.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=08b2caed65e1b666" PluginTypeId="6e6f091e-e3c0-4415-8942-87a3a81a6c0a" Name="Scantegra.Xrm.Plugins.ScantegraSettings.ScantegraSettingsPreCreate">
+      <FriendlyName>aedda855-2ba6-4206-9406-a088acfcf8d2</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

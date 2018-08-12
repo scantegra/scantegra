@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships>
+  <EntityRelationship Name="lk_scan_scantegrasettings_createdby" />
+  <EntityRelationship Name="lk_scan_scantegrasettings_modifiedby" />
+  <EntityRelationship Name="organization_scan_scantegrasettings" />
+</EntityRelationships>
