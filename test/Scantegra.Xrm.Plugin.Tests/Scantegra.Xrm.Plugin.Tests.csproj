@@ -106,6 +106,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Scantegra.Core\Scantegra.Core.csproj">
+      <Project>{E5A80024-2A3C-4FB9-AC06-CE5159724D5C}</Project>
+      <Name>Scantegra.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\src\Scantegra.Xrm.Plugins\Scantegra.Xrm.Plugins.csproj">
       <Project>{c363faf5-0f31-4419-a051-af32daa17822}</Project>
       <Name>Scantegra.Xrm.Plugins</Name>

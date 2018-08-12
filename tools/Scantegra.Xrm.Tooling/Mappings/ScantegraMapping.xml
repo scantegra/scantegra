@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Mapping>  
-  <FileToFile map="PluginAssemblies\**\ScantegraXrmPlugins.dll" to="..\Scantegra.Xrm.Plugins\bin\**\Scantegra.Xrm.Plugins.dll" />  
+  <FileToFile map="PluginAssemblies\**\ScantegraXrmPlugins.dll" to="..\Scantegra.Xrm.Plugins\bin\**\ScantegraXrmPlugins.dll" />  
 </Mapping>
