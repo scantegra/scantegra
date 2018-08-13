@@ -80,14 +80,275 @@
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="1" />
       <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="msdyn_agreementinvoiceproduct" behavior="1" />
+      <RootComponent type="1" schemaName="msdyn_agreementinvoicesetup" behavior="1" />
       <RootComponent type="1" schemaName="msdyn_customerasset" behavior="1" />
       <RootComponent type="1" schemaName="scan_scantegrasettings" behavior="0" />
+      <RootComponent type="29" id="{3318c480-9373-4b8c-9ebd-e8348f3d3c2a}" behavior="0" />
+      <RootComponent type="60" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      <RootComponent type="60" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
       <RootComponent type="91" id="{b172ef8a-f013-4d6f-9907-4e7e591544b0}" schemaName="Scantegra.Xrm.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=08b2caed65e1b666" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="0" type="1" schemaName="msdyn_customerasset" displayName="Customer Asset" solution="FieldService (7.5.0.60)" />
-        <Dependent key="0" type="1" schemaName="msdyn_customerasset" displayName="Customer Asset" />
+        <Required key="0" type="1" schemaName="msdyn_agreementinvoicesetup" displayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="0" type="1" schemaName="msdyn_agreementinvoicesetup" displayName="Agreement Invoice Setup" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="msdyn_agreementinvoiceproduct" displayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="1" type="1" schemaName="msdyn_agreementinvoiceproduct" displayName="Agreement Invoice Product" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="msdyn_customerasset" displayName="Customer Asset" solution="FieldService (7.5.0.60)" />
+        <Dependent key="2" type="1" schemaName="msdyn_customerasset" displayName="Customer Asset" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="msdyn_agreementinvoiceproduct" displayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="3" type="2" schemaName="scan_linetotal_base" displayName="Line Total (Base)" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="msdyn_agreementinvoicesetup" displayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="4" type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="msdyn_agreementinvoicesetup" displayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="5" type="2" schemaName="scan_agreementinvoicetotal" displayName="Agreement Invoice Total" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="msdyn_agreementinvoicesetup" displayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="6" type="2" schemaName="scan_agreementinvoicetotal_base" displayName="Agreement Invoice Total (Base)" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="msdyn_agreementinvoiceproduct" displayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="7" type="2" schemaName="scan_linetotal" displayName="Line Total" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="msdyn_agreementinvoiceproduct" displayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="8" type="29" displayName="Scantegra - Update Agreement Invoice Product Line Total" id="{3318c480-9373-4b8c-9ebd-e8348f3d3c2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="msdyn_agreementinvoiceproduct" displayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="1" schemaName="msdyn_agreementinvoiceproduct" displayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="5" type="2" schemaName="scan_agreementinvoicetotal" displayName="Agreement Invoice Total" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="10" type="1" schemaName="msdyn_agreement" displayName="Agreement" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="2" schemaName="msdyn_agreementinvoiceproductid" displayName="Agreement Invoice Product" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="5" type="2" schemaName="scan_agreementinvoicetotal" displayName="Agreement Invoice Total" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="14" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" solution="Active" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="16" type="2" schemaName="msdyn_recurrencesettings" displayName="Recurrence Settings" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="17" type="2" schemaName="msdyn_agreement" displayName="Agreement" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="18" type="2" schemaName="msdyn_description" displayName="Description" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="2" schemaName="statecode" displayName="Status" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="2" schemaName="msdyn_lineorder" displayName="Line Order" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="21" type="2" schemaName="msdyn_pricelist" displayName="Price List" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="22" type="2" schemaName="msdyn_unitamount" displayName="Unit Amount" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="22" type="2" schemaName="msdyn_unitamount" displayName="Unit Amount" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="8" type="29" displayName="Scantegra - Update Agreement Invoice Product Line Total" id="{3318c480-9373-4b8c-9ebd-e8348f3d3c2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="23" type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="8" type="29" displayName="Scantegra - Update Agreement Invoice Product Line Total" id="{3318c480-9373-4b8c-9ebd-e8348f3d3c2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="2" schemaName="msdyn_agreementinvoiceproductid" displayName="Agreement Invoice Product" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="8" type="29" displayName="Scantegra - Update Agreement Invoice Product Line Total" id="{3318c480-9373-4b8c-9ebd-e8348f3d3c2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="24" type="2" schemaName="msdyn_quantity" displayName="Quantity" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="8" type="29" displayName="Scantegra - Update Agreement Invoice Product Line Total" id="{3318c480-9373-4b8c-9ebd-e8348f3d3c2a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="25" type="2" schemaName="statecode" displayName="Status" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="26" type="2" schemaName="msdyn_agreementinvoicesetup" displayName="Agreement Invoice Setup" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="27" type="2" schemaName="msdyn_agreement" displayName="Agreement" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="23" type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="24" type="2" schemaName="msdyn_quantity" displayName="Quantity" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="28" type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="Active" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="29" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="Active" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="30" type="2" schemaName="msdyn_product" displayName="Product" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="31" type="2" schemaName="msdyn_unit" displayName="Unit" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="32" type="10" schemaName="msdyn_msdyn_agreementinvoicesetup_msdyn_agreementinvoiceproduct_AgreementInvoiceSetup" displayName="msdyn_msdyn_agreementinvoicesetup_msdyn_agreementinvoiceproduct_AgreementInvoiceSetup" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="5" type="2" schemaName="scan_agreementinvoicetotal" displayName="Agreement Invoice Total" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="33" type="10" schemaName="msdyn_msdyn_agreement_msdyn_agreementinvoicesetup_Agreement" displayName="msdyn_msdyn_agreement_msdyn_agreementinvoicesetup_Agreement" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="32" type="10" schemaName="msdyn_msdyn_agreementinvoicesetup_msdyn_agreementinvoiceproduct_AgreementInvoiceSetup" displayName="msdyn_msdyn_agreementinvoicesetup_msdyn_agreementinvoiceproduct_AgreementInvoiceSetup" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="34" type="10" schemaName="msdyn_msdyn_agreementinvoicesetup_msdyn_agreementinvoicedate_InvoiceSetup" displayName="msdyn_msdyn_agreementinvoicesetup_msdyn_agreementinvoicedate_InvoiceSetup" parentSchemaName="msdyn_agreementinvoicedate" parentDisplayName="Agreement Invoice Date" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="32" type="10" schemaName="msdyn_msdyn_agreementinvoicesetup_msdyn_agreementinvoiceproduct_AgreementInvoiceSetup" displayName="msdyn_msdyn_agreementinvoicesetup_msdyn_agreementinvoiceproduct_AgreementInvoiceSetup" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="33" type="10" schemaName="msdyn_msdyn_agreement_msdyn_agreementinvoicesetup_Agreement" displayName="msdyn_msdyn_agreement_msdyn_agreementinvoicesetup_Agreement" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="35" type="10" schemaName="msdyn_msdyn_agreementinvoiceproduct_invoicedetail_AgreementInvoiceProduct" displayName="msdyn_msdyn_agreementinvoiceproduct_invoicedetail_AgreementInvoiceProduct" parentSchemaName="invoicedetail" parentDisplayName="Invoice Line" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="10" schemaName="msdyn_product_msdyn_agreementinvoiceproduct_Product" displayName="msdyn_product_msdyn_agreementinvoiceproduct_Product" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="37" type="10" schemaName="msdyn_msdyn_agreement_msdyn_agreementinvoiceproduct_Agreement" displayName="msdyn_msdyn_agreement_msdyn_agreementinvoiceproduct_Agreement" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="38" type="10" schemaName="msdyn_pricelevel_msdyn_agreementinvoiceproduct_PriceList" displayName="msdyn_pricelevel_msdyn_agreementinvoiceproduct_PriceList" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="10" schemaName="msdyn_uom_msdyn_agreementinvoiceproduct_Unit" displayName="msdyn_uom_msdyn_agreementinvoiceproduct_Unit" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="40" type="20" displayName="Field Service - Administrator" solution="FieldService (7.5.0.60)" id="{00bb53d6-da92-e111-9d8c-000c2959f9b8}" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="41" type="20" displayName="Field Service - Inventory Purchase" solution="FieldService (7.5.0.60)" id="{c4b99aff-89b6-e311-9b7e-00155da8fa1b}" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="42" type="20" displayName="Field Service - Dispatcher" solution="FieldService (7.5.0.60)" id="{d008bfde-da92-e111-9d8c-000c2959f9b8}" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="41" type="20" displayName="Field Service - Inventory Purchase" solution="FieldService (7.5.0.60)" id="{c4b99aff-89b6-e311-9b7e-00155da8fa1b}" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="42" type="20" displayName="Field Service - Dispatcher" solution="FieldService (7.5.0.60)" id="{d008bfde-da92-e111-9d8c-000c2959f9b8}" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="40" type="20" displayName="Field Service - Administrator" solution="FieldService (7.5.0.60)" id="{00bb53d6-da92-e111-9d8c-000c2959f9b8}" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="43" type="26" schemaName="Active Agreement Invoice Products" displayName="Active Agreement Invoice Products" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" id="{0ba49f6d-3a6c-4557-9307-1a6dafc4be2c}" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="44" type="26" schemaName="Agreement Invoice Products View" displayName="Agreement Invoice Products View" parentSchemaName="msdyn_agreementinvoiceproduct" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" id="{264f4b6c-43b1-e111-84f4-000c2959f9b8}" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="45" type="26" schemaName="Active Products (Field Service Product Type is Inventory or Non Inventory)" displayName="Active Products (Field Service Product Type is Inventory or Non Inventory)" parentSchemaName="product" parentDisplayName="Product" solution="FieldService (7.5.0.60)" id="{2bf8e3b8-0030-e311-974a-00155da8fa1b}" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="46" type="26" schemaName="Unit Group Units Lookup View" displayName="Unit Group Units Lookup View" parentSchemaName="uom" parentDisplayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)" id="{4da6f46b-3649-4d0e-b5d2-ccb590f4227d}" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="47" type="26" schemaName="Agreement Invoice Setup Lookup View" displayName="Agreement Invoice Setup Lookup View" parentSchemaName="msdyn_agreementinvoicesetup" parentDisplayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" id="{39ba45bb-4697-444b-bf37-83e22fb9d1c9}" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="48" type="26" schemaName="Price List Lookup View" displayName="Price List Lookup View" parentSchemaName="pricelevel" parentDisplayName="Price List" solution="msdynce_ProductManagement (9.0.4.0066)" id="{ee499892-35e1-4d07-a1b7-bb69fe9bfd42}" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" solution="FieldService (7.5.0.60)" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" solution="FieldService (7.5.0.60)" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="49" type="61" schemaName="msdyn_/Utils/head.js" displayName="msdyn_/Utils/head.js" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="50" type="61" schemaName="msdyn_/AgreementInvoiceSetup/AgreementInvoiceSetup.js" displayName="msdyn_/AgreementInvoiceSetup/AgreementInvoiceSetup.js" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="51" type="61" schemaName="msdyn_/AgreementInvoiceProduct/AgreementInvoiceProduct.js" displayName="msdyn_/AgreementInvoiceProduct/AgreementInvoiceProduct.js" solution="FieldService (7.5.0.60)" />
+        <Dependent key="11" type="60" displayName="Information" parentDisplayName="Agreement Invoice Product" id="{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="49" type="61" schemaName="msdyn_/Utils/head.js" displayName="msdyn_/Utils/head.js" solution="FieldService (7.5.0.60)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Agreement Invoice Setup" id="{315850fa-7eb3-4de6-8dcf-aa68b9979232}" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

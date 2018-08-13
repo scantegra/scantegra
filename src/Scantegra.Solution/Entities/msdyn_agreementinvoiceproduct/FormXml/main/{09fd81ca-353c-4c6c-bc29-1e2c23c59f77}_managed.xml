@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}</formid>
+    <IntroducedVersion>3.1.0.3</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true">
+      <tabs>
+        <tab name="tab_3" id="{dd49901b-198b-e31d-1e0b-2102dac1d938}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" ordinalvalue="1">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{035656cd-0388-023a-55ae-831038ee339d}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="160" celllabelalignment="Left" celllabelposition="Left" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{58673533-e304-a4c7-d155-b4dea05ad283}" showlabel="true" locklevel="0" ordinalvalue="10002" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="scan_linetotal" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="scan_linetotal" disabled="true" uniqueid="{254a464c-1be7-2a34-156b-caaeaaedeb5b}" />
+                      </cell>
+                      <cell id="{d6db8d30-83de-611a-0031-21c3b9bc81bd}" showlabel="false" ordinalvalue="20003" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions solutionaction="Added" />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
