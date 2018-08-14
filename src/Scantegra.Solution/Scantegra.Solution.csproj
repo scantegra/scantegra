@@ -41,9 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entities\Account\Entity.xml" />
+    <Content Include="Entities\Account\FormXml\main\{a72c7955-442b-4ea4-9499-b10cd18b4256}.xml" />
+    <Content Include="Entities\Account\FormXml\main\{a72c7955-442b-4ea4-9499-b10cd18b4256}_managed.xml" />
     <Content Include="Entities\Account\RibbonDiff.xml" />
     <Content Include="Entities\Contact\Entity.xml" />
     <Content Include="Entities\Contact\RibbonDiff.xml" />
+    <Content Include="Entities\Incident\Entity.xml" />
+    <Content Include="Entities\Incident\FormXml\main\{915f6055-2e07-4276-ae08-2b96c8d02c57}.xml" />
+    <Content Include="Entities\Incident\FormXml\main\{915f6055-2e07-4276-ae08-2b96c8d02c57}_managed.xml" />
+    <Content Include="Entities\Incident\RibbonDiff.xml" />
     <Content Include="Entities\msdyn_agreementinvoiceproduct\Entity.xml" />
     <Content Include="Entities\msdyn_agreementinvoiceproduct\FormXml\main\{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}.xml" />
     <Content Include="Entities\msdyn_agreementinvoiceproduct\FormXml\main\{09fd81ca-353c-4c6c-bc29-1e2c23c59f77}_managed.xml" />
@@ -52,6 +58,11 @@
     <Content Include="Entities\msdyn_agreementinvoicesetup\FormXml\main\{315850fa-7eb3-4de6-8dcf-aa68b9979232}.xml" />
     <Content Include="Entities\msdyn_agreementinvoicesetup\FormXml\main\{315850fa-7eb3-4de6-8dcf-aa68b9979232}_managed.xml" />
     <Content Include="Entities\msdyn_agreementinvoicesetup\RibbonDiff.xml" />
+    <Content Include="Entities\msdyn_agreement\Entity.xml" />
+    <Content Include="Entities\msdyn_agreement\FormXml\main\{8f5d9b5f-49b2-4d80-81c9-f080fe4301c0}.xml" />
+    <Content Include="Entities\msdyn_agreement\FormXml\main\{d3fab127-1057-4b53-99a2-f38b90877e99}.xml" />
+    <Content Include="Entities\msdyn_agreement\FormXml\main\{d3fab127-1057-4b53-99a2-f38b90877e99}_managed.xml" />
+    <Content Include="Entities\msdyn_agreement\RibbonDiff.xml" />
     <Content Include="Entities\msdyn_customerasset\Entity.xml" />
     <Content Include="Entities\msdyn_customerasset\RibbonDiff.xml" />
     <Content Include="Entities\scan_scantegrasettings\Entity.xml" />
@@ -69,13 +80,29 @@
     <Content Include="Entities\scan_scantegrasettings\SavedQueries\{9ffafbab-c616-4a02-8777-e561b66b7b80}.xml" />
     <Content Include="Entities\scan_scantegrasettings\SavedQueries\{a7935219-3a9e-e811-a960-000d3a3740b7}.xml" />
     <Content Include="Entities\scan_scantegrasettings\SavedQueries\{c7d7cb53-1cea-46d7-91ab-f01ed9175951}.xml" />
+    <Content Include="Entities\SLA\Entity.xml" />
+    <Content Include="Entities\SLA\RibbonDiff.xml" />
+    <Content Include="Entities\SLA\SavedQueries\{bb2a063d-5d9f-e811-a960-000d3a36478d}.xml" />
     <Content Include="Other\Customizations.xml" />
     <Content Include="Other\EntityMaps.xml" />
     <Content Include="Other\Relationships.xml" />
+    <Content Include="Other\Relationships\Account.xml" />
+    <Content Include="Other\Relationships\BusinessUnit.xml" />
+    <Content Include="Other\Relationships\msdyn_agreement.xml" />
+    <Content Include="Other\Relationships\msdyn_agreementsubstatus.xml" />
+    <Content Include="Other\Relationships\msdyn_taxcode.xml" />
     <Content Include="Other\Relationships\Organization.xml" />
+    <Content Include="Other\Relationships\Owner.xml" />
+    <Content Include="Other\Relationships\PriceLevel.xml" />
+    <Content Include="Other\Relationships\SLA.xml" />
     <Content Include="Other\Relationships\SystemUser.xml" />
+    <Content Include="Other\Relationships\Team.xml" />
+    <Content Include="Other\Relationships\Territory.xml" />
     <Content Include="Other\Solution.xml" />
     <Content Include="PluginAssemblies\ScantegraXrmPlugins-B172EF8A-F013-4D6F-9907-4E7E591544B0\ScantegraXrmPlugins.dll.data.xml" />
+    <Content Include="Workflows\Scantegra-ApplyAgreementSLAToCase-5970A9FC-2721-41D2-A410-66D0414E0390.xaml.data.xml" />
+    <Content Include="Workflows\Scantegra-ApplyDefaultAgreementToCase-56FB09CE-988A-4086-B8B8-371CDBC5378D.xaml.data.xml" />
+    <Content Include="Workflows\Scantegra-Re-OpenCaseOnEmailIfCaseResolved-C5773168-4820-461D-9BCD-1351316FC3C9.xaml.data.xml" />
     <Content Include="Workflows\Scantegra-UpdateAgreementInvoiceProductLineTotal-3318C480-9373-4B8C-9EBD-E8348F3D3C2A.xaml.data.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +112,18 @@
     <Page Include="Entities\msdyn_agreementinvoicesetup\Formulas\msdyn_agreementinvoicesetup-scan_agreementinvoicetotal.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <XamlAppDef Include="Workflows\Scantegra-ApplyAgreementSLAToCase-5970A9FC-2721-41D2-A410-66D0414E0390.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+    <XamlAppDef Include="Workflows\Scantegra-ApplyDefaultAgreementToCase-56FB09CE-988A-4086-B8B8-371CDBC5378D.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+    <XamlAppDef Include="Workflows\Scantegra-Re-OpenCaseOnEmailIfCaseResolved-C5773168-4820-461D-9BCD-1351316FC3C9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
     <XamlAppDef Include="Workflows\Scantegra-UpdateAgreementInvoiceProductLineTotal-3318C480-9373-4B8C-9EBD-E8348F3D3C2A.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{915f6055-2e07-4276-ae08-2b96c8d02c57}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>2</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="Summary" id="{fcfdc216-e3c6-4bbe-baba-1d5774ea78f5}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true" ordinalvalue="0">
+          <columns>
+            <column width="33%" id="0">
+              <sections>
+                <section name="Case Details Summary" showlabel="false" showbar="false" locklevel="0" id="{b1105b8a-4c1c-a045-841b-d688c7826cc6}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" ordinalvalue="2">
+                  <rows>
+                    <row>
+                      <cell id="{7237401a-07fb-424c-a404-1b4833990d78}" showlabel="true" locklevel="0" ordinalvalue="10008" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{6420b8f0-0814-4ec4-8305-f32e6160d1f4}" showlabel="true" locklevel="0" rowspan="3" availableforphone="true" ordinalvalue="10009" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{9231d137-b571-4227-a796-29de1a0ec569}" showlabel="true" locklevel="0" ordinalvalue="10006" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="prioritycode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="prioritycode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5b3059c4-b991-5245-7165-7470063c1dc6}" showlabel="true" locklevel="0" ordinalvalue="10007" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="scan_agreement" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="scan_agreement" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="CASERELATIONSHIP_TAB" id="{ffa6d363-c7d5-47da-a342-f5fb409f276c}" IsUserDefined="0" showlabel="true" expanded="false" ordinalvalue="2">
+          <columns>
+            <column width="33%" id="2">
+              <sections>
+                <section name="KnowledgeArticles" showlabel="false" showbar="false" id="{952B0290-FC73-4228-BF24-2892A772A1EA}" IsUserDefined="0" layout="varwidth" labelwidth="102" celllabelposition="Left" height="auto" ordinalvalue="0" solutionaction="Modified" />
+                <section name="Solutions" showlabel="false" showbar="false" id="{495d18ec-aaba-483d-8684-822969df46b1}" IsUserDefined="0" layout="varwidth" labelwidth="102" celllabelposition="Left" columns="1" ordinalvalue="1">
+                  <rows>
+                    <row>
+                      <cell id="{4641600d-5ad9-4c2b-bb95-ef02021f77a7}" showlabel="false" ordinalvalue="10000" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Case for Interactive experience" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Default Interactive experience Case form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

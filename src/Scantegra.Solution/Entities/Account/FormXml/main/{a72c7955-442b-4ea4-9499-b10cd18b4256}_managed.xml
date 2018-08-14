@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{a72c7955-442b-4ea4-9499-b10cd18b4256}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>2</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="SUMMARY_TAB" id="{3fbb0e51-c6a6-42a1-8113-3b19558132f2}" IsUserDefined="0" showlabel="false" expanded="false" locklevel="0" ordinalvalue="0" solutionaction="Modified">
+          <columns>
+            <column width="24%" id="0">
+              <sections>
+                <section name="ACCOUNT_INFORMATION" showlabel="true" showbar="false" id="{0ec2e053-634c-4955-8f61-bfc599ce53c1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Left" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{ef2c88be-705c-4c90-98c3-7f90fc0d706c}" showlabel="true" ordinalvalue="10004" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{0bfe4998-5b51-4aa6-83e3-972898f155a1}" showlabel="true" ordinalvalue="10005" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{e3f51852-90c2-4b33-8629-ac786384437a}" showlabel="true" ordinalvalue="10006" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{7bbba77a-0b62-415a-98d7-899ec877aacc}" showlabel="true" locklevel="0" ordinalvalue="10007" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{b5e71955-f9cf-48d4-8f2f-c5f847a0667d}" ordinalvalue="10008" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{cbeb02bf-cf1a-43e1-a6aa-a727eb0d8edf}" showlabel="true" locklevel="0" ordinalvalue="10009" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{1889c013-9d71-b00d-c670-8b1be2dccb8c}" showlabel="true" locklevel="0" ordinalvalue="10002" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="scan_customerid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="scan_customerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{83421cea-5268-86d5-b51d-3db9ea8340cd}" showlabel="true" locklevel="0" ordinalvalue="10003" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="customertypecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="customertypecode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="38%" id="2">
+              <sections>
+                <section name="ref_pan_SUMMARY_TAB_section_6" showlabel="true" showbar="false" locklevel="0" id="{2de57b8f-b251-411d-802c-ad2c696fc51c}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{333307f3-422a-445a-80ed-c065402e8c8e}" showlabel="true" colspan="1" auto="false" rowspan="7" ordinalvalue="10000">
+                        <control id="Contacts" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}">
+                          <parameters>
+                            <VisualizationId />
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="DETAILS_TAB" id="{d76404cc-4248-474a-bc6a-8fb250ef6268}" IsUserDefined="0" showlabel="true" expanded="false" ordinalvalue="1" solutionaction="Modified" />
+        <tab name="scantegra_tab" id="{a46d9629-247b-8cb9-38d1-1a941044c72c}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" ordinalvalue="2" solutionaction="Added">
+          <labels>
+            <label description="Scantegra" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="67%" id="0">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{45bd59d8-04dd-03bd-c3c9-2c9c93bb6a77}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" ordinalvalue="0">
+                  <labels>
+                    <label description="DETAILS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{77e248ba-ad14-89cc-0810-0e0dcc2cb51e}" showlabel="true" locklevel="0" ordinalvalue="10000">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="scan_defaultagreement" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="scan_defaultagreement" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0a0ec26c-ab78-de06-e32e-d1683a2aec48}" showlabel="true" locklevel="0" ordinalvalue="10001">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="scan_azureactivedirectoryid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="scan_azureactivedirectoryid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%" id="1">
+              <sections>
+                <section name="tab_3_section_2" showlabel="false" showbar="false" locklevel="0" id="{926ba492-5db9-1bdb-b6e5-0d2229058aba}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" ordinalvalue="0">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e4e36ac8-4a40-d893-926c-4ae81be27803}" showlabel="false" ordinalvalue="10000">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{657fd085-05d3-4918-aaac-24614234457c}" columns="1111" celllabelposition="Top" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{0134b5d2-09fc-40a9-a773-6f5136493010}" showlabel="false" ordinalvalue="40003" solutionaction="Modified" />
+          </row>
+        </rows>
+      </header>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="AppCommon.Account.Instance.form_onload" libraryName="AppCommon/Account/Account_main_system_library.js" handlerUniqueId="2bccd2b4-2e7e-485e-877e-0b0f26c20b83" enabled="true" />
+          </InternalHandlers>
+        </event>
+      </events>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignsInSFA" Sequence="20" Area="Marketing" Id="navCampaignsInSFA" Show="false" solutionaction="Removed" />
+        </NavBar>
+        <NavBarAreas solutionaction="Added">
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Account for Interactive experience" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Default Interactive experience Account form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

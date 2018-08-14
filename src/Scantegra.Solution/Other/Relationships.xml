@@ -1,6 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityRelationships>
+  <EntityRelationship Name="business_unit_msdyn_agreement" />
+  <EntityRelationship Name="lk_msdyn_agreement_createdby" />
+  <EntityRelationship Name="lk_msdyn_agreement_modifiedby" />
   <EntityRelationship Name="lk_scan_scantegrasettings_createdby" />
   <EntityRelationship Name="lk_scan_scantegrasettings_modifiedby" />
+  <EntityRelationship Name="manualsla_msdyn_agreement" />
+  <EntityRelationship Name="msdyn_account_msdyn_agreement_BillingAccount" />
+  <EntityRelationship Name="msdyn_account_msdyn_agreement_ServiceAccount" />
+  <EntityRelationship Name="msdyn_msdyn_agreement_msdyn_agreement_OriginatingAgreement" />
+  <EntityRelationship Name="msdyn_msdyn_agreementsubstatus_msdyn_agreement_SubStatus" />
+  <EntityRelationship Name="msdyn_msdyn_taxcode_msdyn_agreement_SalesTaxCode" />
+  <EntityRelationship Name="msdyn_pricelevel_msdyn_agreement_PriceList" />
+  <EntityRelationship Name="msdyn_territory_msdyn_agreement_ServiceTerritory" />
   <EntityRelationship Name="organization_scan_scantegrasettings" />
+  <EntityRelationship Name="owner_msdyn_agreement" />
+  <EntityRelationship Name="scan_msdyn_agreement_account_DefaultAgreement" />
+  <EntityRelationship Name="scan_msdyn_agreement_incident_Agreement" />
+  <EntityRelationship Name="sla_msdyn_agreement" />
+  <EntityRelationship Name="team_msdyn_agreement" />
+  <EntityRelationship Name="user_msdyn_agreement" />
 </EntityRelationships>

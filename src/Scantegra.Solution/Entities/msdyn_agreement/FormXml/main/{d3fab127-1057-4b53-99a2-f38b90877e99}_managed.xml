@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{d3fab127-1057-4b53-99a2-f38b90877e99}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab verticallayout="true" id="{4c8bef3b-e06c-4411-b312-59f180556e4d}" IsUserDefined="1" name="{4c8bef3b-e06c-4411-b312-59f180556e4d}" locklevel="0" expanded="true" showlabel="true" labelid="{47c5adc6-75ff-4944-a611-8d92cb0849eb}" ordinalvalue="0">
+          <columns>
+            <column width="33%" id="0">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{3568be1d-2a14-40a9-b8cd-b04e3806e3e2}" name="{3568be1d-2a14-40a9-b8cd-b04e3806e3e2}" columns="11" locklevel="0" labelwidth="140" celllabelalignment="Left" celllabelposition="Left" labelid="{83d7f5e6-4c84-4a39-8ae5-9cf754d3b369}" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{093dbd22-a03d-ae14-3ca8-db1dc86d44d3}" showlabel="true" locklevel="0" colspan="2" labelid="{e2f4b123-cf3a-4cbc-b05f-b5a9593ea2eb}" ordinalvalue="10007" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{3d39070b-69ce-4b4f-b252-eb29dd5a3202}" showlabel="true" locklevel="1" colspan="2" labelid="{dbf9dc60-0a29-4296-a0a2-e29e4cd13f1c}" ordinalvalue="10008" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{ba17280e-a095-3235-dce2-9639715a5cbe}" showlabel="true" locklevel="0" ordinalvalue="10005" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="slaid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="slaid" disabled="false" uniqueid="{bbb41686-97e2-6805-0799-633894c1ed64}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{BB2A063D-5D9F-E811-A960-000D3A36478D}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{8ac917a1-1074-853d-c2c4-9a457b56dde3}" showlabel="false" ordinalvalue="20006" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msdyn_msdyn_agreement_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3" Sequence="10000" Area="Info" Id="nav_msdyn_msdyn_agreement_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3" Show="false" solutionaction="Removed" />
+        </NavBar>
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Agreement" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
