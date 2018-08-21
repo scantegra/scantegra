@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6731f0a6-594d-415f-8268-1e4e68812395}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="scan_name" select="1" icon="1" preview="1">
+        <row name="result" id="scan_communicationcircuitid">
+          <cell name="scan_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="scan_communicationcircuit">
+          <attribute name="scan_communicationcircuitid" />
+          <attribute name="scan_name" />
+          <attribute name="createdon" />
+          <order attribute="scan_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Communication Circuit Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

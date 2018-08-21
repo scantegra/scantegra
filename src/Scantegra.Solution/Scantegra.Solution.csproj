@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppModules\Customerservicehub\AppModule.xml" />
     <Content Include="Entities\Account\Entity.xml" />
     <Content Include="Entities\Account\FormXml\main\{a72c7955-442b-4ea4-9499-b10cd18b4256}.xml" />
     <Content Include="Entities\Account\FormXml\main\{a72c7955-442b-4ea4-9499-b10cd18b4256}_managed.xml" />
@@ -64,7 +65,101 @@
     <Content Include="Entities\msdyn_agreement\FormXml\main\{d3fab127-1057-4b53-99a2-f38b90877e99}_managed.xml" />
     <Content Include="Entities\msdyn_agreement\RibbonDiff.xml" />
     <Content Include="Entities\msdyn_customerasset\Entity.xml" />
+    <Content Include="Entities\msdyn_customerasset\FormXml\main\{8e32cdf1-c3c0-490f-8681-37ac1e223d1a}.xml" />
+    <Content Include="Entities\msdyn_customerasset\FormXml\main\{8e32cdf1-c3c0-490f-8681-37ac1e223d1a}_managed.xml" />
     <Content Include="Entities\msdyn_customerasset\RibbonDiff.xml" />
+    <Content Include="Entities\SavedQuery\Entity.xml" />
+    <Content Include="Entities\SavedQuery\RibbonDiff.xml" />
+    <Content Include="Entities\scan_accountsite\Entity.xml" />
+    <Content Include="Entities\scan_accountsite\FormXml\card\{e19bfa75-9684-4b4b-9377-a234454f7d1c}.xml" />
+    <Content Include="Entities\scan_accountsite\FormXml\card\{e19bfa75-9684-4b4b-9377-a234454f7d1c}_managed.xml" />
+    <Content Include="Entities\scan_accountsite\FormXml\main\{d1678c81-1a03-4798-83f3-63845fb7e5c7}.xml" />
+    <Content Include="Entities\scan_accountsite\FormXml\main\{d1678c81-1a03-4798-83f3-63845fb7e5c7}_managed.xml" />
+    <Content Include="Entities\scan_accountsite\FormXml\quick\{287341e8-e68f-4d38-b042-e179ebd7e845}.xml" />
+    <Content Include="Entities\scan_accountsite\FormXml\quick\{287341e8-e68f-4d38-b042-e179ebd7e845}_managed.xml" />
+    <Content Include="Entities\scan_accountsite\RibbonDiff.xml" />
+    <Content Include="Entities\scan_accountsite\SavedQueries\{26dfdafd-7c6b-4d08-8234-5d3e14c2b987}.xml" />
+    <Content Include="Entities\scan_accountsite\SavedQueries\{2ac5256e-5c4e-48d2-a6d6-081b9f6e893e}.xml" />
+    <Content Include="Entities\scan_accountsite\SavedQueries\{7663978e-3ebf-4823-822b-cfff159160bc}.xml" />
+    <Content Include="Entities\scan_accountsite\SavedQueries\{7b8000d6-dde0-4ef2-b626-82b6b52f0b68}.xml" />
+    <Content Include="Entities\scan_accountsite\SavedQueries\{8c51c08c-a8a0-e811-a960-000d3a36478d}.xml" />
+    <Content Include="Entities\scan_accountsite\SavedQueries\{b7503b9b-43e8-4e27-bd7d-dec4ed0f3923}.xml" />
+    <Content Include="Entities\scan_accountsite\SavedQueries\{c84013de-aa67-4754-a690-87333119595a}.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\Entity.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\FormXml\card\{be112834-7cb9-4a38-b238-11595c9205e7}.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\FormXml\card\{be112834-7cb9-4a38-b238-11595c9205e7}_managed.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\FormXml\main\{c25e77ca-841b-4908-a343-9a187db24d48}.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\FormXml\main\{c25e77ca-841b-4908-a343-9a187db24d48}_managed.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\FormXml\quick\{125a6294-6d63-4e2e-af77-7cb1b1f81280}.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\FormXml\quick\{125a6294-6d63-4e2e-af77-7cb1b1f81280}_managed.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\RibbonDiff.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\SavedQueries\{489972bf-a20c-48b4-80aa-8409dd8c0336}.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\SavedQueries\{492d6f1e-9da1-e811-a966-000d3a37468c}.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\SavedQueries\{602355c8-508d-431c-93f4-39bbfe194061}.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\SavedQueries\{8e81d1d4-6e5a-4f1d-a2f5-fc231aed29f0}.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\SavedQueries\{c4cfefc2-0eb5-4de0-9ccb-4c693240f80a}.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\SavedQueries\{ce363de9-0334-45d4-b7ea-6b8e6a22b80b}.xml" />
+    <Content Include="Entities\scan_alertgroupalertnotificationassociation\SavedQueries\{f0d06fdf-e8d4-472b-b668-a7d95efd0bbf}.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\Entity.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\FormXml\card\{602bd940-60fa-446b-99f8-28adc6f10924}.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\FormXml\card\{602bd940-60fa-446b-99f8-28adc6f10924}_managed.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\FormXml\main\{4e44fb60-453f-4337-bcbc-f0e0989554e4}.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\FormXml\main\{4e44fb60-453f-4337-bcbc-f0e0989554e4}_managed.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\FormXml\quick\{8be159ef-6d62-4aa1-9797-4039519b044a}.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\FormXml\quick\{8be159ef-6d62-4aa1-9797-4039519b044a}_managed.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\RibbonDiff.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\SavedQueries\{08710a97-1b66-4efe-aff0-5ebd0d82de76}.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\SavedQueries\{24a343fb-b88f-4b68-9a5e-e6779a097631}.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\SavedQueries\{2ef5b780-2ca5-45a2-93f1-e6ec49a6a482}.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\SavedQueries\{85c9743a-99a0-e811-a960-000d3a36478d}.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\SavedQueries\{b97aa956-5c5b-4f4d-86c2-2b909b14c090}.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\SavedQueries\{c698b201-9629-4fd4-9cf3-92fd11bc86c3}.xml" />
+    <Content Include="Entities\scan_alertnotificationaction\SavedQueries\{fb23e258-1417-418d-b29a-995e30eafaae}.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\Entity.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\FormXml\card\{afa8a4a3-183d-4730-8428-0ebafb96e196}.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\FormXml\card\{afa8a4a3-183d-4730-8428-0ebafb96e196}_managed.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\FormXml\main\{441bba49-e9ed-45c9-891b-62ba97ea935b}.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\FormXml\main\{441bba49-e9ed-45c9-891b-62ba97ea935b}_managed.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\FormXml\quick\{a153e1ac-3881-47ee-8dc0-8497b902f914}.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\FormXml\quick\{a153e1ac-3881-47ee-8dc0-8497b902f914}_managed.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\RibbonDiff.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\SavedQueries\{0de5b7d5-e0f8-43ad-86fb-b8da583ccbb1}.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\SavedQueries\{174a6d47-cbf1-4978-9e48-322fdba1f1ab}.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\SavedQueries\{1a2e77d0-6220-4f9b-8532-49acaaaea329}.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\SavedQueries\{ac657ed8-fff0-497c-b485-99329d1c2fb9}.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\SavedQueries\{c31ffc0f-99a0-e811-a960-000d3a36478d}.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\SavedQueries\{dcab947d-dfbe-411a-889f-a713c7bdfca0}.xml" />
+    <Content Include="Entities\scan_alertnotificationgroup\SavedQueries\{ff753a28-cb08-48f6-9c65-82b7fbe13596}.xml" />
+    <Content Include="Entities\scan_alert\Entity.xml" />
+    <Content Include="Entities\scan_alert\FormXml\card\{bdc90591-ff8e-474a-ae26-9eb309bc070e}.xml" />
+    <Content Include="Entities\scan_alert\FormXml\card\{bdc90591-ff8e-474a-ae26-9eb309bc070e}_managed.xml" />
+    <Content Include="Entities\scan_alert\FormXml\main\{7f9d3a92-6ffa-4be8-9cc0-85cc2fe05e1c}.xml" />
+    <Content Include="Entities\scan_alert\FormXml\main\{7f9d3a92-6ffa-4be8-9cc0-85cc2fe05e1c}_managed.xml" />
+    <Content Include="Entities\scan_alert\FormXml\quick\{97968bc2-f862-485d-b3e9-34739d7b931a}.xml" />
+    <Content Include="Entities\scan_alert\FormXml\quick\{97968bc2-f862-485d-b3e9-34739d7b931a}_managed.xml" />
+    <Content Include="Entities\scan_alert\RibbonDiff.xml" />
+    <Content Include="Entities\scan_alert\SavedQueries\{1e5cbd93-6e41-4748-8ccb-26333c0550c7}.xml" />
+    <Content Include="Entities\scan_alert\SavedQueries\{452e89ed-92a0-e811-a960-000d3a36478d}.xml" />
+    <Content Include="Entities\scan_alert\SavedQueries\{47589ae8-bc2e-40a7-a280-89f08233ad70}.xml" />
+    <Content Include="Entities\scan_alert\SavedQueries\{806e5f9a-23ed-4692-bd15-a78c10e2d464}.xml" />
+    <Content Include="Entities\scan_alert\SavedQueries\{91a79030-0bf8-4e98-ad6c-6a0cd8d8a379}.xml" />
+    <Content Include="Entities\scan_alert\SavedQueries\{e0fd4024-1147-40df-a60f-76038239e300}.xml" />
+    <Content Include="Entities\scan_alert\SavedQueries\{f70e15bb-470b-4578-84c3-f21446f303da}.xml" />
+    <Content Include="Entities\scan_communicationcircuit\Entity.xml" />
+    <Content Include="Entities\scan_communicationcircuit\FormXml\card\{d6575ce0-eebe-41b2-a879-11f2ac0b8a02}.xml" />
+    <Content Include="Entities\scan_communicationcircuit\FormXml\card\{d6575ce0-eebe-41b2-a879-11f2ac0b8a02}_managed.xml" />
+    <Content Include="Entities\scan_communicationcircuit\FormXml\main\{afc8aaed-3aa8-444e-886b-f5211c772b54}.xml" />
+    <Content Include="Entities\scan_communicationcircuit\FormXml\main\{afc8aaed-3aa8-444e-886b-f5211c772b54}_managed.xml" />
+    <Content Include="Entities\scan_communicationcircuit\FormXml\quick\{a49a246e-f9ee-49c2-98b2-d5de406ff17e}.xml" />
+    <Content Include="Entities\scan_communicationcircuit\FormXml\quick\{a49a246e-f9ee-49c2-98b2-d5de406ff17e}_managed.xml" />
+    <Content Include="Entities\scan_communicationcircuit\RibbonDiff.xml" />
+    <Content Include="Entities\scan_communicationcircuit\SavedQueries\{35e7c57a-a8a0-e811-a960-000d3a36478d}.xml" />
+    <Content Include="Entities\scan_communicationcircuit\SavedQueries\{4b3a449c-9fcd-43dd-8a05-66b39f2e2c51}.xml" />
+    <Content Include="Entities\scan_communicationcircuit\SavedQueries\{6731f0a6-594d-415f-8268-1e4e68812395}.xml" />
+    <Content Include="Entities\scan_communicationcircuit\SavedQueries\{7fb29c8c-68e9-4615-aa92-65616b9021a9}.xml" />
+    <Content Include="Entities\scan_communicationcircuit\SavedQueries\{a4d03501-a7f4-4ad2-a8b4-01f37dfdc839}.xml" />
+    <Content Include="Entities\scan_communicationcircuit\SavedQueries\{b2dc180b-e4c5-4ca5-9b89-675e2910b24c}.xml" />
+    <Content Include="Entities\scan_communicationcircuit\SavedQueries\{d5b78ab2-bb00-40a7-8ce5-6a0db78e9f87}.xml" />
     <Content Include="Entities\scan_scantegrasettings\Entity.xml" />
     <Content Include="Entities\scan_scantegrasettings\FormXml\card\{160c874a-6bf9-4058-9cdd-812902c7fe7f}.xml" />
     <Content Include="Entities\scan_scantegrasettings\FormXml\card\{160c874a-6bf9-4058-9cdd-812902c7fe7f}_managed.xml" />
@@ -83,6 +178,9 @@
     <Content Include="Entities\SLA\Entity.xml" />
     <Content Include="Entities\SLA\RibbonDiff.xml" />
     <Content Include="Entities\SLA\SavedQueries\{bb2a063d-5d9f-e811-a960-000d3a36478d}.xml" />
+    <Content Include="OptionSets\scan_alertnotificationactiontype.xml" />
+    <Content Include="OptionSets\scan_alertseverity.xml" />
+    <Content Include="Other\ConnectionRoles.xml" />
     <Content Include="Other\Customizations.xml" />
     <Content Include="Other\EntityMaps.xml" />
     <Content Include="Other\Relationships.xml" />
@@ -90,20 +188,26 @@
     <Content Include="Other\Relationships\BusinessUnit.xml" />
     <Content Include="Other\Relationships\msdyn_agreement.xml" />
     <Content Include="Other\Relationships\msdyn_agreementsubstatus.xml" />
+    <Content Include="Other\Relationships\msdyn_customerasset.xml" />
     <Content Include="Other\Relationships\msdyn_taxcode.xml" />
     <Content Include="Other\Relationships\Organization.xml" />
     <Content Include="Other\Relationships\Owner.xml" />
     <Content Include="Other\Relationships\PriceLevel.xml" />
+    <Content Include="Other\Relationships\scan_accountsite.xml" />
+    <Content Include="Other\Relationships\scan_alertnotificationaction.xml" />
+    <Content Include="Other\Relationships\scan_alertnotificationgroup.xml" />
     <Content Include="Other\Relationships\SLA.xml" />
     <Content Include="Other\Relationships\SystemUser.xml" />
     <Content Include="Other\Relationships\Team.xml" />
     <Content Include="Other\Relationships\Territory.xml" />
     <Content Include="Other\Solution.xml" />
     <Content Include="PluginAssemblies\ScantegraXrmPlugins-B172EF8A-F013-4D6F-9907-4E7E591544B0\ScantegraXrmPlugins.dll.data.xml" />
+    <Content Include="Roles\Scantegra Automaion.xml" />
     <Content Include="Workflows\Scantegra-ApplyAgreementSLAToCase-5970A9FC-2721-41D2-A410-66D0414E0390.xaml.data.xml" />
     <Content Include="Workflows\Scantegra-ApplyDefaultAgreementToCase-56FB09CE-988A-4086-B8B8-371CDBC5378D.xaml.data.xml" />
     <Content Include="Workflows\Scantegra-Re-OpenCaseOnEmailIfCaseResolved-C5773168-4820-461D-9BCD-1351316FC3C9.xaml.data.xml" />
     <Content Include="Workflows\Scantegra-UpdateAgreementInvoiceProductLineTotal-3318C480-9373-4B8C-9EBD-E8348F3D3C2A.xaml.data.xml" />
+    <Content Include="Workflows\Scantegra-UpdateCommunicationCircuitname-29B1E33D-0DC4-45D1-8276-371781D6F0AA.xaml.data.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,6 +216,10 @@
     <Page Include="Entities\msdyn_agreementinvoicesetup\Formulas\msdyn_agreementinvoicesetup-scan_agreementinvoicetotal.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <XamlAppDef Include="Workflows\Scantegra-UpdateCommunicationCircuitname-29B1E33D-0DC4-45D1-8276-371781D6F0AA.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
     <XamlAppDef Include="Workflows\Scantegra-ApplyAgreementSLAToCase-5970A9FC-2721-41D2-A410-66D0414E0390.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

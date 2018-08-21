@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{c25e77ca-841b-4908-a343-9a187db24d48}</formid>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{353a8ddd-0539-47c2-8d6a-af92c6cd3a71}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{bc824cec-29c6-4d8a-b8b1-0aed9e1e6f83}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d6053a72-c7a7-443a-9efe-54b0caea9f11}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scan_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="scan_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ac305ce6-29c3-8b47-3196-c5ec3ce13132}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Alert Notification Group" languagecode="1033" />
+                        </labels>
+                        <control id="scan_alertnotificationgroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="scan_alertnotificationgroup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b644a1d9-9037-899a-0209-96b913a62aad}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Alert Notification Action" languagecode="1033" />
+                        </labels>
+                        <control id="scan_alertnotificationaction" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="scan_alertnotificationaction" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{34018b69-25c8-42f3-825b-beaa35d9b6dc}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

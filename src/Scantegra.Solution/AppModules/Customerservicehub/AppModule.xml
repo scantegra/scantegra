@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>Customerservicehub</UniqueName>
+  <IntroducedVersion>9.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <AppModuleComponents>
+    <AppModuleComponent type="60" id="{57220268-843b-e511-80d1-00155db10d2b}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{a104b835-9f3b-e511-80d1-00155db10d2b}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{acddedde-9140-4130-a1c1-96a5c6867a9f}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{d201a642-6283-4f1d-81b7-da4b1685e698}" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="msdyn_customerasset" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{8e32cdf1-c3c0-490f-8681-37ac1e223d1a}" solutionaction="Added" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{3dac4d9e-568c-e611-80d4-00155d42a122}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Customer Service Hub" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="A focused, interactive experience for managing your customer service." languagecode="1033" />
+  </Descriptions>
+</AppModule>

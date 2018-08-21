@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConnectionRoles>
+  <ConnectionRoles>
+    <ConnectionRole>
+      <connectionroleid>{0795bf0a-b8a3-e811-a960-000d3a36478d}</connectionroleid>
+      <name>Monitors</name>
+      <category>1002</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>0.0.0.1</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{9351480b-bea3-e811-a960-000d3a36478d}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>msdyn_customerasset</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{3c5a18a8-b8a3-e811-a960-000d3a36478d}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>scan_uptimerobotmonitor</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{fc557a1c-b8a3-e811-a960-000d3a36478d}</connectionroleid>
+      <name>Monitored By</name>
+      <category>1002</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>0.0.0.1</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{ef342941-bfa3-e811-a960-000d3a36478d}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>scan_uptimerobotmonitor</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+  </ConnectionRoles>
+  <ConnectionRoleAssociations>
+    <ConnectionRoleAssociation>
+      <connectionroleid>{0795bf0a-b8a3-e811-a960-000d3a36478d}</connectionroleid>
+      <associatedconnectionroleid>{fc557a1c-b8a3-e811-a960-000d3a36478d}</associatedconnectionroleid>
+    </ConnectionRoleAssociation>
+  </ConnectionRoleAssociations>
+</ConnectionRoles>

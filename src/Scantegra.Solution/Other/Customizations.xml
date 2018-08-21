@@ -5,12 +5,14 @@
   <Workflows />
   <FieldSecurityProfiles />
   <Templates />
+  <ConnectionRoles />
   <EntityMaps />
   <EntityRelationships />
   <OrganizationSettings />
   <optionsets />
   <CustomControls />
   <SolutionPluginAssemblies />
+  <AppModules />
   <EntityDataProviders />
   <Languages>
     <Language>1033</Language>

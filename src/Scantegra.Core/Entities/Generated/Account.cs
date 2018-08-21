@@ -2750,6 +2750,66 @@ namespace Scantegra.Core.Entities
 		}
 		
 		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("scan_azureactivedirectoryid")]
+		public string scan_AzureActiveDirectoryID
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<string>("scan_azureactivedirectoryid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("scan_AzureActiveDirectoryID");
+				this.SetAttributeValue("scan_azureactivedirectoryid", value);
+				this.OnPropertyChanged("scan_AzureActiveDirectoryID");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("scan_customerid")]
+		public string scan_CustomerID
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<string>("scan_customerid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("scan_CustomerID");
+				this.SetAttributeValue("scan_customerid", value);
+				this.OnPropertyChanged("scan_CustomerID");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("scan_defaultagreement")]
+		public Microsoft.Xrm.Sdk.EntityReference scan_DefaultAgreement
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("scan_defaultagreement");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("scan_DefaultAgreement");
+				this.SetAttributeValue("scan_defaultagreement", value);
+				this.OnPropertyChanged("scan_DefaultAgreement");
+			}
+		}
+		
+		/// <summary>
 		/// Type the number of shares available to the public for the account. This number is used as an indicator in financial performance analysis.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("sharesoutstanding")]
@@ -3200,183 +3260,6 @@ namespace Scantegra.Core.Entities
 				this.OnPropertyChanging("YomiName");
 				this.SetAttributeValue("yominame", value);
 				this.OnPropertyChanged("YomiName");
-			}
-		}
-		
-		/// <summary>
-		/// 1:N account_master_account
-		/// </summary>
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<Scantegra.Core.Entities.Account> Referencedaccount_master_account
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				return this.GetRelatedEntities<Scantegra.Core.Entities.Account>("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referenced);
-			}
-			[System.Diagnostics.DebuggerNonUserCode()]
-			set
-			{
-				this.OnPropertyChanging("Referencedaccount_master_account");
-				this.SetRelatedEntities<Scantegra.Core.Entities.Account>("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
-				this.OnPropertyChanged("Referencedaccount_master_account");
-			}
-		}
-		
-		/// <summary>
-		/// 1:N account_parent_account
-		/// </summary>
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<Scantegra.Core.Entities.Account> Referencedaccount_parent_account
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				return this.GetRelatedEntities<Scantegra.Core.Entities.Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referenced);
-			}
-			[System.Diagnostics.DebuggerNonUserCode()]
-			set
-			{
-				this.OnPropertyChanging("Referencedaccount_parent_account");
-				this.SetRelatedEntities<Scantegra.Core.Entities.Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
-				this.OnPropertyChanged("Referencedaccount_parent_account");
-			}
-		}
-		
-		/// <summary>
-		/// 1:N contact_customer_accounts
-		/// </summary>
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_customer_accounts")]
-		public System.Collections.Generic.IEnumerable<Scantegra.Core.Entities.Contact> contact_customer_accounts
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				return this.GetRelatedEntities<Scantegra.Core.Entities.Contact>("contact_customer_accounts", null);
-			}
-			[System.Diagnostics.DebuggerNonUserCode()]
-			set
-			{
-				this.OnPropertyChanging("contact_customer_accounts");
-				this.SetRelatedEntities<Scantegra.Core.Entities.Contact>("contact_customer_accounts", null, value);
-				this.OnPropertyChanged("contact_customer_accounts");
-			}
-		}
-		
-		/// <summary>
-		/// 1:N msdyn_account_account_BillingAccount
-		/// </summary>
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("msdyn_account_account_BillingAccount", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<Scantegra.Core.Entities.Account> Referencedmsdyn_account_account_BillingAccount
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				return this.GetRelatedEntities<Scantegra.Core.Entities.Account>("msdyn_account_account_BillingAccount", Microsoft.Xrm.Sdk.EntityRole.Referenced);
-			}
-			[System.Diagnostics.DebuggerNonUserCode()]
-			set
-			{
-				this.OnPropertyChanging("Referencedmsdyn_account_account_BillingAccount");
-				this.SetRelatedEntities<Scantegra.Core.Entities.Account>("msdyn_account_account_BillingAccount", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
-				this.OnPropertyChanged("Referencedmsdyn_account_account_BillingAccount");
-			}
-		}
-		
-		/// <summary>
-		/// 1:N msdyn_account_msdyn_customerasset_Account
-		/// </summary>
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("msdyn_account_msdyn_customerasset_Account")]
-		public System.Collections.Generic.IEnumerable<Scantegra.Core.Entities.msdyn_customerasset> msdyn_account_msdyn_customerasset_Account
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				return this.GetRelatedEntities<Scantegra.Core.Entities.msdyn_customerasset>("msdyn_account_msdyn_customerasset_Account", null);
-			}
-			[System.Diagnostics.DebuggerNonUserCode()]
-			set
-			{
-				this.OnPropertyChanging("msdyn_account_msdyn_customerasset_Account");
-				this.SetRelatedEntities<Scantegra.Core.Entities.msdyn_customerasset>("msdyn_account_msdyn_customerasset_Account", null, value);
-				this.OnPropertyChanged("msdyn_account_msdyn_customerasset_Account");
-			}
-		}
-		
-		/// <summary>
-		/// N:1 account_master_account
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("masterid")]
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public Scantegra.Core.Entities.Account Referencingaccount_master_account
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				return this.GetRelatedEntity<Scantegra.Core.Entities.Account>("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referencing);
-			}
-		}
-		
-		/// <summary>
-		/// N:1 account_parent_account
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("parentaccountid")]
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public Scantegra.Core.Entities.Account Referencingaccount_parent_account
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				return this.GetRelatedEntity<Scantegra.Core.Entities.Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referencing);
-			}
-			[System.Diagnostics.DebuggerNonUserCode()]
-			set
-			{
-				this.OnPropertyChanging("Referencingaccount_parent_account");
-				this.SetRelatedEntity<Scantegra.Core.Entities.Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
-				this.OnPropertyChanged("Referencingaccount_parent_account");
-			}
-		}
-		
-		/// <summary>
-		/// N:1 account_primary_contact
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("primarycontactid")]
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_primary_contact")]
-		public Scantegra.Core.Entities.Contact account_primary_contact
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				return this.GetRelatedEntity<Scantegra.Core.Entities.Contact>("account_primary_contact", null);
-			}
-			[System.Diagnostics.DebuggerNonUserCode()]
-			set
-			{
-				this.OnPropertyChanging("account_primary_contact");
-				this.SetRelatedEntity<Scantegra.Core.Entities.Contact>("account_primary_contact", null, value);
-				this.OnPropertyChanged("account_primary_contact");
-			}
-		}
-		
-		/// <summary>
-		/// N:1 msdyn_account_account_BillingAccount
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("msdyn_billingaccount")]
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("msdyn_account_account_BillingAccount", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public Scantegra.Core.Entities.Account Referencingmsdyn_account_account_BillingAccount
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				return this.GetRelatedEntity<Scantegra.Core.Entities.Account>("msdyn_account_account_BillingAccount", Microsoft.Xrm.Sdk.EntityRole.Referencing);
-			}
-			[System.Diagnostics.DebuggerNonUserCode()]
-			set
-			{
-				this.OnPropertyChanging("Referencingmsdyn_account_account_BillingAccount");
-				this.SetRelatedEntity<Scantegra.Core.Entities.Account>("msdyn_account_account_BillingAccount", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
-				this.OnPropertyChanged("Referencingmsdyn_account_account_BillingAccount");
 			}
 		}
 		

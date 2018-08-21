@@ -77,7 +77,55 @@ namespace Scantegra.Core.Entities
 				return this.CreateQuery<Scantegra.Core.Entities.scan_scantegrasettings>();
 			}
 		}
-	}
+
+        /// <summary>
+		/// Gets a binding to the set of all <see cref="Scantegra.Core.Entities.scan_alert"/> entities.
+		/// </summary>
+		public System.Linq.IQueryable<Scantegra.Core.Entities.scan_alert> scan_alertSet
+        {
+            [System.Diagnostics.DebuggerNonUserCode()]
+            get
+            {
+                return this.CreateQuery<Scantegra.Core.Entities.scan_alert>();
+            }
+        }
+
+        /// <summary>
+		/// Gets a binding to the set of all <see cref="Scantegra.Core.Entities.scan_alertnotificationaction"/> entities.
+		/// </summary>
+		public System.Linq.IQueryable<Scantegra.Core.Entities.scan_alertnotificationaction> scan_alertnotificationactionSet
+        {
+            [System.Diagnostics.DebuggerNonUserCode()]
+            get
+            {
+                return this.CreateQuery<Scantegra.Core.Entities.scan_alertnotificationaction>();
+            }
+        }
+
+        /// <summary>
+		/// Gets a binding to the set of all <see cref="Scantegra.Core.Entities.scan_alertnotificationgroup"/> entities.
+		/// </summary>
+		public System.Linq.IQueryable<Scantegra.Core.Entities.scan_alertnotificationgroup> scan_alertnotificationgroupSet
+        {
+            [System.Diagnostics.DebuggerNonUserCode()]
+            get
+            {
+                return this.CreateQuery<Scantegra.Core.Entities.scan_alertnotificationgroup>();
+            }
+        }
+
+        /// <summary>
+		/// Gets a binding to the set of all <see cref="Scantegra.Core.Entities.scan_alertgroupalertnotificationassociation"/> entities.
+		/// </summary>
+		public System.Linq.IQueryable<Scantegra.Core.Entities.scan_alertgroupalertnotificationassociation> scan_alertgroupalertnotificationassociationSet
+        {
+            [System.Diagnostics.DebuggerNonUserCode()]
+            get
+            {
+                return this.CreateQuery<Scantegra.Core.Entities.scan_alertgroupalertnotificationassociation>();
+            }
+        }
+    }
 	
 	internal sealed class EntityOptionSetEnum
 	{
